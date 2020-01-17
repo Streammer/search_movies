@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Search films</title>
+</head>
+<body class="body body_flex">
+	<div class="container container_gray container_style">
+		<nav class="navbar navbar_style">
+				<a href="index.html" class="navbar__link-to-back navbar__link-to-back_position">Search films application</a>
+		</nav>
+	</div>	
+	<div class="container container_gray container_style">
+		<div class="wrapper wrapper_style">
+			<h3 class = "title title_center">Search movies</h3>
+			<form id = "search-form" class = "search-form">
+				<input type="text" id = "search-text" class="form-for-movies form-controll"
+				placeholder="write the name of movie here">
+			</form>
+		</div>
+	</div>
+	<div class="container container_style">
+		<div id="movies" class = "movies movies_width">
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>

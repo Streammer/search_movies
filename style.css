@@ -1,0 +1,195 @@
+@import url('./middle.css');
+@media screen and (min-width: 720px){
+	.container_style{
+		min-width: 720px;
+		width: 100%;
+	}
+	
+	.popular_style{
+		width: calc(50% - 20px);
+		margin: 0 10px;
+	}
+	.movies__movies-popular_style{
+		width: 100%;
+		margin: 0 10px;
+	}
+	.movies_width{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 960px){
+	.popular_style{
+		width: calc(33.33% - 20px);
+	}
+	.movies_width{
+		width: auto;
+	}
+	.movies_width{
+		width: 100%;
+	}
+	
+}
+@media screen and (min-width: 1140px){
+	.popular_style{
+		width: calc(25% - 20px);
+	}
+	.movies_width{
+		width: auto;
+	}
+}
+
+
+
+/*general styles*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+.body_flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-shrink: 1;
+	width: 100%;
+}
+.container_style{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 540px;
+	width: 100%;
+}
+
+.container_gray{
+	background-color: lightgray;
+}
+.flex{
+	display: flex;
+}
+.title_center{
+	text-align: center;
+}
+/********************************/
+
+/*Caption of the section*/
+.navbar_style, .wrapper_style{
+	padding: 15px;
+}
+.navbar_style{
+	font-weight: bold;
+	align-items: center;
+}
+.wrapper> h3{
+	margin-bottom: 5px;
+}
+.navbar__link-to-back_position{
+	vertical-align: middle;
+}
+/*************************************/
+/*form-for-movies*/
+
+.search-form{
+	width:100%;	
+}
+.search-form input{
+	border: 1px solid silver;
+	border-radius: 5px;
+	outline: none;
+	padding: 7px;
+}
+
+.wrapper{
+	width: 100%;
+	padding-left: 12px;
+}
+.form-for-movies{
+	width: 100%;
+}
+/************************************/
+/*week popular capture*/
+.popular__caption_styles{
+	font-family: sans-serif;
+	font-size: 1rem;
+	overflow: hidden;
+	padding: 10px 5px 10px 5px;
+	text-overflow: ellipsis;
+	text-align: center;
+	white-space: nowrap;
+}
+.item{
+	flex-shrink: 1;
+}
+
+/*****************************************/
+/* selected movie style*/
+.full-movie_style, .name-of-movie, .movies__movies-popular_style{
+	font-family: sans-serif;
+	font-size: 1.25rem;
+	padding: 5px 10px 5px 10px;
+}
+.description_style{
+	padding: 10px;
+	width: 100%;
+}
+.description_style> p{
+	margin-bottom: 5px;
+}
+.description_style> p:last-child{
+	margin-bottom: 0;
+}
+.poster-cover_style{
+	width: 100%;
+}
+/**********************************/
+.movies_width{
+	/*width: 100%;*/
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	justify-content: center;
+	
+	
+}
+.youtube__trailer-caption_style{
+	font-family: sans-serif;
+	font-size: 1rem;
+	padding: 5px 10px 5px 10px;
+}
+.col-3, .poster-cover_style, .preview_style{
+	width: calc(100% - 20px);
+	margin: 0 10px;
+}
+.preview_style{
+	height: 350px;
+}
+img{
+	max-width: 100%;
+	width: 100%;
+}
+.img-poster{
+	width:100%;
+}
+.spinner{
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		border: 10px dashed;
+		border-radius: 50%;
+		border-left-color: transparent;
+		border-top-color: #aaa;
+		border-right-color: #555;
+		border-bottom-color: black;
+		animation: spin 500ms infinite linear;
+}
+@keyframes spin{
+		100%{
+				transform: rotate(360deg)
+		}
+}
